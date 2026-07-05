@@ -1,0 +1,34 @@
+{
+  "name": "casestudy-demo-app",
+  "version": "1.0.0",
+  "description": "Demo web application for Con Cung DevOps case study - Express API with health probes for Kubernetes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --coverage --forceExit",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "devops",
+    "casestudy",
+    "express"
+  ],
+  "author": "DevOps Candidate",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "lines": 60,
+        "statements": 60
+      }
+    }
+  }
+}
